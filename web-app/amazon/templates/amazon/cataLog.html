@@ -1,0 +1,24 @@
+{% extends "amazon/base.html" %}
+{% block content %}
+<h2 class="text-muted">Fruit</h2>
+<li><a href="{% url 'detail' 1 5 'Banana' 'Fruit'%}">Banana</a></li>
+<li><a href="{% url 'detail' 2 10 'Apple' 'Fruit'%}">Apple</a></li>
+<li><a href="{% url 'detail' 3 15 'PineApple' 'Fruit'%}">PineApple</a></li>
+<li><a href="{% url 'detail' 4 20 'WaterMelon' 'Fruit'%}">WaterMelon</a></li>
+<li><a href="{% url 'detail' 5 25 'Pear' 'Fruit'%}">Pear</a></li>
+<li><a href="{% url 'detail' 6 30 'Cherry' 'Fruit'%}">Cherry</a></li>
+<li><a href="{% url 'detail' 7 35 'Grape' 'Fruit'%}">Grape</a></li>
+<br>
+
+<h2 class="text-muted">Electronic Product</h2>
+<li><a href="{% url 'detail' 8 1000 'iPhone13' 'Electronic Product'%}">iPhone13</a></li>
+<li><a href="{% url 'detail' 9 1500 'iPad' 'Electronic Product'%}">iPad</a></li>
+<li><a href="{% url 'detail' 10 2000 'iMac' 'Electronic Product'%}">iMac</a></li>
+<li><a href="{% url 'detail' 11 1600 'MacBookPro' 'Electronic Product'%}">MacBookPro</a></li>
+<li><a href="{% url 'detail' 12 500 'Switch' 'Electronic Product'%}">Switch</a></li>
+<li><a href="{% url 'detail' 13 700 'PS5' 'Electronic Product'%}">PS5</a></li>
+<li><a href="{% url 'detail' 14 600 'XBOX' 'Electronic Product'%}">XBOX</a></li>
+
+<br>
+
+{% endblock content %}
